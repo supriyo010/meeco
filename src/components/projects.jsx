@@ -110,6 +110,7 @@ function Projects({ scrollToTop }) {
           <button
             className="w-[53px] h-[53px] border border-[#d4d4d4] hover:bg-[#F9F9F9] an mr-[23px] flex items-center justify-center group"
             onClick={() => {
+              scrollToTop();
               setPage((cur) => {
                 if (cur <= 1) {
                   return Math.ceil(
@@ -125,6 +126,7 @@ function Projects({ scrollToTop }) {
           <button
             className="w-[53px] h-[53px] border border-[#d4d4d4] hover:bg-[#F9F9F9] an flex items-center justify-center group"
             onClick={() => {
+              scrollToTop();
               setPage((cur) => {
                 if (
                   cur >= Math.ceil(Object.keys(exp.combinedArray).length / rows)
