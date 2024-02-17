@@ -27,7 +27,7 @@ function App() {
     <Router>
       <div
         ref={contentRef}
-        className="w-screen h-screen overflow-y-auto select-none"
+        className="w-screen h-screen overflow-y-auto select-none overflow-x-clip"
       >
         <Navbar scrollToBottom={scrollToBottom} scrollToTop={scrollToTop} />
         <Routes>

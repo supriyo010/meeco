@@ -38,14 +38,14 @@ function Footer() {
   ];
   return (
     <div className="w-full h-max bg-[#333] flex flex-col">
-      <div className="px-[130px] w-full h-max flex flex-row justify-between">
+      <div className="px-[130px] w-full h-max flex flex-row justify-between max-[1080px]:px-[10px] max-[1080px]:justify-center">
         <img
           src={lg1}
           alt="Logo"
           className="w-[200px] h-[100px] object-cover filter mix-blend-screen max-[1080px]:hidden"
         />
-        <div className="flex-grow h-max flex flex-row max-w-[60%]">
-          <div className="h-max w-1/2 flex flex-col items-start py-[30px] px-[40px] gap-4">
+        <div className="flex-grow h-max flex flex-row max-w-[60%] max-[1080px]:max-w-[100%] max-[700px]:flex-col max-[700px]:py-[20px]">
+          <div className="h-max w-1/2 flex flex-col items-start py-[30px] px-[40px] gap-4 max-[700px]:hidden">
             <p className="footH1 pb-1">Company</p>
             {navPages.map((item, ind) => {
               return (
@@ -62,7 +62,7 @@ function Footer() {
               );
             })}
           </div>
-          <div className="h-max w-1/2 flex flex-col items-start py-[30px] px-[40px] gap-4">
+          <div className="h-max w-1/2 flex flex-col items-start py-[30px] px-[40px] gap-4 max-[700px]:w-full max-[700px]:px-[10px] max-[700px]:py-[10px] max-[700px]:gap-[10px]">
             <p className="footH1"> Our Socials</p>
             {socialPages.map((item, ind) => {
               return (
@@ -79,7 +79,7 @@ function Footer() {
               );
             })}
           </div>
-          <div className="h-max w-1/2 flex flex-col items-start py-[30px] px-[40px] gap-4">
+          <div className="h-max w-1/2 flex flex-col items-start py-[30px] px-[40px] gap-4 max-[700px]:w-full max-[700px]:px-[10px] max-[700px]:py-[10px] max-[700px]:gap-[10px]">
             <p className="footH1">Contact Us</p>
             {contactPages.map((item, ind) => {
               return (
