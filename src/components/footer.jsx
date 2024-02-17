@@ -42,7 +42,7 @@ function Footer() {
         <img
           src={lg1}
           alt="Logo"
-          className="w-[200px] h-[100px] object-cover filter mix-blend-screen"
+          className="w-[200px] h-[100px] object-cover filter mix-blend-screen max-[1080px]:hidden"
         />
         <div className="flex-grow h-max flex flex-row max-w-[60%]">
           <div className="h-max w-1/2 flex flex-col items-start py-[30px] px-[40px] gap-4">

@@ -24,9 +24,9 @@ function ImgButton(
         scrollToTop();
         navigate(to);
       }}
-      className={`h-full w-[${w}] relative overflow-clip group`}
+      className={`h-full w-[${w}] relative overflow-clip group max-[1080px]:h-[200px] max-[1080px]:w-full`}
     >
-      <div className="absolute z-10 w-full h-full flex flex-col items-start justify-center pl-[40px] bg-[#00000031] backdrop-filter backdrop-blur-sm translate-x-[-100%] group-hover:translate-x-0 an">
+      <div className="absolute z-10 w-full h-full flex flex-col items-start justify-center pl-[40px] bg-[#00000031] backdrop-filter backdrop-blur-sm translate-x-[-100%] group-hover:translate-x-0 an max-[1080px]:translate-x-0">
         <div className="hw">{n1}</div>
         <div className="hw">{n2}</div>
         <div className="w-max h-max flex flex-row items-center gap-[18px] mt-[30px]">
@@ -43,11 +43,11 @@ function Block4({ scrollToTop }) {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full h-[calc(100vh+200px)] py-[50px]">
+    <div className="w-full h-[calc(100vh+200px)] py-[50px] max-[1080px]:h-max">
       <div className="h-full w-full flex flex-col">
         <div className="h1">Our Projects</div>
-        <div className="flex-grow mt-[40px] mb-[30px] flex flex-col gap-[30px] overflow-y-clip">
-          <div className="w-full h-1/2 flex flex-row gap-[30px]">
+        <div className="flex-grow mt-[40px] mb-[30px] flex flex-col gap-[30px] overflow-y-clip max-[1080px]:h-max">
+          <div className="w-full h-1/2 flex flex-row gap-[30px] max-[1080px]:flex-col max-[1080px]:h-max">
             {ImgButton(
               "50%",
               "Sample",
@@ -65,7 +65,7 @@ function Block4({ scrollToTop }) {
               scrollToTop
             )}
           </div>
-          <div className="w-full h-1/2 flex flex-row gap-[30px]">
+          <div className="w-full h-1/2 flex flex-row gap-[30px] max-[1080px]:flex-col max-[1080px]:h-max">
             {ImgButton(
               "30%",
               "Sample",

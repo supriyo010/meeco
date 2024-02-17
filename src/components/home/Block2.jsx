@@ -9,9 +9,9 @@ function Block2({ scrollToTop }) {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full h-[calc(100vh-100px)] py-[50px]">
-      <div className="h-full w-full bg-[#F3F3F3] flex flex-row px-[70px] py-[30px]">
-        <div className="h-full w-[60%] flex flex-row pl-[30px] gap-[30px]">
+    <div className="w-full h-[calc(100vh-100px)] py-[50px] max-[1080px]:h-max max-[1080px]:pb-0">
+      <div className="h-full w-full bg-[#F3F3F3] flex flex-row px-[70px] py-[30px] max-[1080px]:px-[20px]">
+        <div className="h-full w-[60%] flex flex-row pl-[30px] gap-[30px] max-[1080px]:hidden">
           <div className="h-full w-1/2 flex flex-col">
             <img
               key={"fe"}
@@ -35,10 +35,10 @@ function Block2({ scrollToTop }) {
             />
           </div>
         </div>
-        <div className="h-full w-[40%] flex flex-col items-start justify-between pl-[30px]">
+        <div className="h-full w-[40%] flex flex-col items-start justify-between pl-[30px] max-[1080px]:w-full max-[1080px]:pl-0  max-[1080px]:gap-[20px]">
           <div className="h1">About</div>
-          <div className="w-full h-[calc(100%-174px)] overflow-y-clip">
-            <div className="w-full h-full text-ellipsis text-wrap txt">
+          <div className="w-full h-[calc(100%-174px)] overflow-y-clip max-[1080px]:h-max">
+            <div className="w-full h-full text-ellipsis text-wrap txt max-[1080px]:h-max">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of

@@ -7,7 +7,7 @@ import Block5 from "./home/Block5";
 
 function Home({ scrollToTop }) {
   return (
-    <div className="px-[130px] w-full h-max">
+    <div className="px-[130px] w-full h-max max-[1080px]:px-[20px]">
       <Block1 scrollToTop={scrollToTop} />
       <Block2 scrollToTop={scrollToTop} />
       <Block3 />

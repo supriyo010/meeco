@@ -74,7 +74,9 @@ function Project() {
             onClick={() => {}}
           />
         </div>
-        <div className="w-[50%] h-full overflow-y-auto pr-[10px] text-justify">{projects[id].description}</div>
+        <div className="w-[50%] h-full overflow-y-auto pr-[10px] text-justify">
+          {projects[id].description}
+        </div>
       </div>
     </div>
   );

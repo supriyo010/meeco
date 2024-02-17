@@ -96,10 +96,10 @@ function Block5() {
 
   return (
     <div className="w-full h-max py-[50px]">
-      <div className="h-max w-full flex flex-col items-center">
+      <div className="h-max w-full flex flex-col items-center max-[1080px]:items-start">
         <div className="h1">Contact Us</div>
         <div className="h-max w-full mt-[40px] flex flex-row justify-center gap-[30px]">
-          <div className="h-max w-[40%] flex flex-col justify-start items-start gap-[10px]">
+          <div className="h-max w-[40%] flex flex-col justify-start items-start gap-[10px] max-[1080px]:w-full">
             {Object.entries(form).map((item) => {
               const onChange = (newValue) => {
                 setForm((cur) => ({

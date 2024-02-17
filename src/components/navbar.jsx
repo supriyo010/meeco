@@ -37,13 +37,7 @@ function Navbar({ scrollToBottom, scrollToTop }) {
                 className={`w-[0px] absolute top-[50%] -translate-y-[50%] left-[50%] translate-x-[-50%] border-y border-[black] h-[100%] an group-hover:w-full ${
                   location.pathname === item.to ? "w-full" : ""
                 }`}
-              >
-                {console.log(
-                  location.pathname,
-                  item.to,
-                  location.pathname === item.to
-                )}
-              </div>
+              ></div>
             </button>
           );
         })}
