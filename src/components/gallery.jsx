@@ -39,7 +39,7 @@ function Gallery() {
                 <div
                   className={`w-full h-full ${
                     active[imageName]
-                      ? "absolute z-[60] w-full h-[calc(100vh-100px)] px-[100px] max-[1080px]:px-[10px] py-[50px] left-0 top-0 bg-[#fff] backdrop-filter backdrop-blur-sm"
+                      ? "absolute z-[60] w-full h-[calc(100vh-100px)] px-[100px] max-[1080px]:px-[10px] py-[50px] left-0 top-0 bg-[#fff] backdrop-filter backdrop-blur-sm max-[1080px]:h-screen"
                       : ""
                   }`}
                 >
