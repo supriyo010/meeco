@@ -4,8 +4,8 @@ import { LuMoveLeft, LuMoveRight } from "react-icons/lu";
 import { MdClose, MdOutlineClose } from "react-icons/md";
 
 function Gallery() {
-  const [imagesPerRow, setImagesperRow] = useState(5);
-  const [rows, setRows] = useState(2);
+  const [imagesPerRow, setImagesperRow] = useState(1);
+  const [rows, setRows] = useState(5);
   const [page, setPage] = useState(1);
   const [active, setActive] = useState({});
 
