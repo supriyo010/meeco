@@ -55,7 +55,7 @@ function Projects({ scrollToTop }) {
   ];
 
   return (
-    <div className="px-[130px] w-full h-max flex flex-col items-start pb-[50px]">
+    <div className="px-[130px] max-[1080px]:px-[10px] w-full h-max flex flex-col items-start pb-[50px]">
       <div className="flex flex-row justify-start gap-[20px] pb-[30px]">
         <div className="h1">Our</div>
         <div className="h2">Projects</div>
@@ -65,9 +65,9 @@ function Projects({ scrollToTop }) {
         {exp.combinedArray.map((imageName, index) => {
           if (index >= rows * (page - 1) && index < rows * page)
             return (
-              <div className={`w-[100%] h-[50vh] flex flex-row`}>
-                <div className={`w-full h-full bg-[#F3F3F3] flex flex-row`}>
-                  <div className="h-full w-[55%] overflow-clip">
+              <div className={`w-[100%] h-[50vh] flex flex-row max-[1080px]:h-max` }>
+                <div className={`w-full h-full bg-[#F3F3F3] flex flex-row max-[1080px]:h-max`}>
+                  <div className="h-full w-[55%] max-[1080px]:hidden overflow-clip ">
                     <img
                       key={index}
                       src={imageName[1]}
@@ -76,7 +76,7 @@ function Projects({ scrollToTop }) {
                       onClick={() => {}}
                     />
                   </div>
-                  <div className="h-full w-[45%] flex flex-col justify-between p-[30px]">
+                  <div className="h-full w-[45%] max-[1080px]:w-full flex flex-col justify-between p-[30px] max-[1080px]:gap-[10px] max-[1080px]:h-max">
                     <p className="h4">{projects[index].title}</p>
                     <p className="txt">{projects[index].description}</p>
                     <button

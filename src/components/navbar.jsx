@@ -8,7 +8,7 @@ function Navbar({ scrollToBottom, scrollToTop }) {
   const navigate = useNavigate();
 
   const navPages = [
-    { title: "main", to: "/" },
+    { title: "home", to: "/" },
     { title: "gallery", to: "/gallery" },
     { title: "projects", to: "/projects" },
     { title: "contact", to: "/contact" },

@@ -8,7 +8,7 @@ function Footer() {
   const navigate = useNavigate();
 
   const navPages = [
-    { title: "main", to: "/" },
+    { title: "home", to: "/" },
     { title: "gallery", to: "/gallery" },
     { title: "projects", to: "/projects" },
     { title: "certifications", to: "/certifications" },

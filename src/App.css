@@ -184,4 +184,10 @@
     font-size: 40px;
     line-height: 45px; /* 100% */
   }
+  .h4{
+    font-size: 30px;
+  }
+  .txt{
+    font-size: 15px;
+  }
 }
