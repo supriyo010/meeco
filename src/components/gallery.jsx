@@ -9,7 +9,17 @@ function Gallery() {
   const [page, setPage] = useState(1);
   const [active, setActive] = useState({});
 
-  useEffect(() => {
+  // useEffect(() => {
+  //   if (window.innerWidth < 1080) {
+  //     setRows(5);
+  //     setImagesperRow(1);
+  //   } else {
+  //     setRows(2);
+  //     setImagesperRow(5);
+  //   }
+  // });
+
+  function ori() {
     if (window.innerWidth < 1080) {
       setRows(5);
       setImagesperRow(1);
@@ -17,7 +27,25 @@ function Gallery() {
       setRows(2);
       setImagesperRow(5);
     }
-  });
+  }
+
+  useEffect(() => {
+    function handleResize() {
+      ori();
+    }
+
+    function handleLoad() {
+      ori();
+    }
+
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
 
   return (
     <div className="px-[130px] w-full h-max flex flex-col items-start pb-[50px] max-[1080px]:px-[10px]">
