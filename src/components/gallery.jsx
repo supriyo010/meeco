@@ -1,36 +1,167 @@
-import { Image } from "./image";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import exp from "./images/imageImport";
+import { LuMoveLeft, LuMoveRight } from "react-icons/lu";
+import { MdClose, MdOutlineClose } from "react-icons/md";
 
-export const Gallery = (props) => {
+function Gallery() {
+  const [imagesPerRow, setImagesperRow] = useState(1);
+  const [rows, setRows] = useState(5);
+  const [page, setPage] = useState(1);
+  const [active, setActive] = useState({});
+
+  // useEffect(() => {
+  //   if (window.innerWidth < 1080) {
+  //     setRows(5);
+  //     setImagesperRow(1);
+  //   } else {
+  //     setRows(2);
+  //     setImagesperRow(5);
+  //   }
+  // });
+
+  function ori() {
+    if (window.innerWidth < 1080) {
+      setRows(5);
+      setImagesperRow(1);
+    } else {
+      setRows(2);
+      setImagesperRow(5);
+    }
+  }
+
+  useEffect(() => {
+    function handleResize() {
+      ori();
+    }
+
+    function handleLoad() {
+      ori();
+    }
+
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
+
   return (
-    <div id="portfolio" className="text-center">
-      <div className="container">
-        <div className="section-title">
-          <h2>Gallery</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
-          </p>
-        </div>
-        <div className="row">
-          <div className="portfolio-items">
-            {props.data
-              ? props.data.map((d, i) => (
-                  <div
-                    key={`${d.title}-${i}`}
-                    className="col-sm-6 col-md-4 col-lg-4"
-                  >
-                    <Image
-                      title={d.title}
-                      largeImage={d.largeImage}
-                      smallImage={d.smallImage}
+    <div className="px-[130px] w-full h-max flex flex-col items-start pb-[50px] max-[1080px]:px-[10px]">
+      <div className="flex flex-row justify-start gap-[20px] pb-[30px]">
+        <div className="h1">Photo</div>
+        <div className="h2">Gallery</div>
+      </div>
+
+      <div className="w-full h-max pb-[30px] flex flex-wrap">
+        {Object.keys(exp.images).map((imageName, index) => {
+          if (
+            index >= rows * imagesPerRow * (page - 1) &&
+            index < rows * imagesPerRow * page
+          )
+            return (
+              <div
+                className={`w-[${100 / imagesPerRow}%] h-[30vh] overflow-clip`}
+              >
+                <div
+                  className={`w-full h-full ${
+                    active[imageName]
+                      ? "absolute z-[60] w-full h-[calc(100vh-100px)] px-[100px] max-[1080px]:px-[10px] py-[50px] left-0 top-0 bg-[#fff] backdrop-filter backdrop-blur-sm max-[1080px]:h-screen"
+                      : ""
+                  }`}
+                >
+                  <div className="w-full h-full relative overflow-clip group">
+                    <div
+                      className={` ${
+                        active[imageName]
+                          ? "absolute h-max w-max right-0 top-0 m-3 border border-[#ffffff] bg-[#3333334f] backdrop-filter backdrop-blur-lg cursor-pointer translate-x-[calc(100%+12px)] group-hover:translate-x-0 an"
+                          : "hidden"
+                      }`}
+                      onClick={() => {
+                        setActive((cur) => ({ ...cur, [imageName]: false }));
+                      }}
+                    >
+                      <MdClose
+                        size={50}
+                        color="#fff"
+                        className="p-3 hover:rotate-90 an"
+                      />
+                    </div>
+                    <img
+                      key={index}
+                      src={exp.images[imageName]}
+                      alt={imageName}
+                      className={`w-full h-full object-cover ${
+                        active[imageName]
+                          ? ""
+                          : "scale-110 cursor-pointer hover:scale-90 an"
+                      }`}
+                      onClick={() => {
+                        setActive((cur) => ({ ...cur, [imageName]: true }));
+                      }}
                     />
                   </div>
-                ))
-              : "Loading..."}
+                </div>
+              </div>
+            );
+        })}
+      </div>
+
+      <div className="w-full h-max flex flex-row justify-start items-center gap-[30px] ">
+        <div className="flex flex-row w-max gap-8 items-center">
+          <div className="pagiD">{page < 10 ? `0${page}` : `${page}`}</div>
+          <div className="h-[44px] w-[2px] skew-x-[135deg] bg-[#bdbdbd]"></div>
+          <div className="pagi">
+            {Math.ceil(Object.keys(exp.images).length / (rows * imagesPerRow)) <
+            10
+              ? `0${Math.ceil(
+                  Object.keys(exp.images).length / (rows * imagesPerRow)
+                )}`
+              : `${Math.ceil(
+                  Object.keys(exp.images).length / (rows * imagesPerRow)
+                )}`}
           </div>
+        </div>
+        <div className="flex flex-row justify-start items-center flex-grow">
+          <button
+            className="w-[53px] h-[53px] border border-[#d4d4d4] hover:bg-[#F9F9F9] an mr-[23px] flex items-center justify-center group"
+            onClick={() => {
+              setPage((cur) => {
+                if (cur <= 1) {
+                  return Math.ceil(
+                    Object.keys(exp.images).length / (rows * imagesPerRow)
+                  );
+                }
+                return cur - 1;
+              });
+            }}
+          >
+            <LuMoveLeft className="text-[#333333] group-hover:-translate-x-1 an" />
+          </button>
+          <button
+            className="w-[53px] h-[53px] border border-[#d4d4d4] hover:bg-[#F9F9F9] an flex items-center justify-center group"
+            onClick={() => {
+              setPage((cur) => {
+                if (
+                  cur >=
+                  Math.ceil(
+                    Object.keys(exp.images).length / (rows * imagesPerRow)
+                  )
+                ) {
+                  return 1;
+                }
+                return cur + 1;
+              });
+            }}
+          >
+            <LuMoveRight className="text-[#333333] group-hover:translate-x-1 an" />
+          </button>
+          <div className="h-[1px] flex-grow bg-[#d4d4d4]"></div>
         </div>
       </div>
     </div>
   );
-};
+}
+
+export default Gallery;
