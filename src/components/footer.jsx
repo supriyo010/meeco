@@ -21,7 +21,7 @@ function Footer() {
   ];
   const contactPages = [
     {
-      title: "1234 Sample Street Austin Texas 78704",
+      title: "1234 Sample Street",
       icon: <MdLocationPin className="text-[#fff]" size={24} />,
       to: "/",
     },
@@ -31,7 +31,7 @@ function Footer() {
       to: "/",
     },
     {
-      title: "sampleemail@gmail.com",
+      title: "meeco@gmail.com",
       icon: <MdMail className="text-[#fff]" size={20} />,
       to: "/",
     },
