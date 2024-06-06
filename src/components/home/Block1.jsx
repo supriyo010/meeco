@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import i1 from "../images/P1.jpg";
-import i2 from "../images/P2.png";
+import i2 from "../images/P2.jpg";
 import { LuMoveLeft, LuMoveRight } from "react-icons/lu";
 import { useNavigate } from "react-router-dom";
 
@@ -48,7 +48,7 @@ function Block1({ scrollToTop }) {
             >
               <LuMoveRight className="text-[#333333] group-hover:translate-x-1 an" />
             </button>
-            <div className="h-[1px] flex-grow bg-[#d4d4d4]"></div>
+            <div className="h-[1px] flex-grow bg-[#e0d9d9]"></div>
           </div>
           <div className="flex flex-row w-full gap-8 items-center">
             <div className="pagiD">

@@ -10,7 +10,7 @@ function Block2({ scrollToTop }) {
 
   return (
     <div className="w-full h-[calc(100vh-100px)] py-[50px] max-[1080px]:h-max max-[1080px]:pb-0">
-      <div className="h-full w-full bg-[#F3F3F3] flex flex-row px-[70px] py-[30px] max-[1080px]:px-[20px]">
+      <div className="h-full w-full bg-[#938de9] flex flex-row px-[70px] py-[30px] max-[1080px]:px-[20px]">
         <div className="h-full w-[60%] flex flex-row pl-[30px] gap-[30px] max-[1080px]:hidden">
           <div className="h-full w-1/2 flex flex-col">
             <img
@@ -39,12 +39,11 @@ function Block2({ scrollToTop }) {
           <div className="h1">About</div>
           <div className="w-full h-[calc(100%-174px)] overflow-y-clip max-[1080px]:h-max">
             <div className="w-full h-full text-ellipsis text-wrap txt max-[1080px]:h-max">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+            Tech Meeco Infra Pvt. Ltd. is a leading provider of pre-engineered building (PEB) solutions, 
+            delivering comprehensive services in design, fabrication, and installation. With a commitment to quality,
+             efficiency, and customer satisfaction, we specialize in customized PEB structures for various industrial,
+              commercial, and institutional applications.
+
             </div>
           </div>
 

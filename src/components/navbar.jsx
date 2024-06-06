@@ -8,7 +8,9 @@ function Navbar({ scrollToBottom, scrollToTop }) {
   const navigate = useNavigate();
 
   const navPages = [
+
     { title: "home", to: "/" },
+    { title: "Service", to: "/ser" },
     { title: "gallery", to: "/gallery" },
     { title: "projects", to: "/projects" },
     { title: "contact", to: "/contact" },
@@ -18,11 +20,12 @@ function Navbar({ scrollToBottom, scrollToTop }) {
 
   return (
     <div className="h-[100px] sticky top-0 left-0 w-full z-50 bg-[#ffffff] flex flex-row justify-between items-center px-[130px] max-[1080px]:px-[10px]">
-      <img
-        src={lg1}
-        alt="Logo"
-        className="h-[40px] object-contain max-[1080px]:h-[30px] max-[1080px]:pl-2"
-      />
+    <img
+  src={lg1}
+  alt="Logo"
+  className="h-[150px] w-[180px] object-contain max-[1080px]:h-[250px] max-[1080px]:w-[220px] max-[1080px]:pl-2"
+/>
+
 
       <div className="flex flex-row justify-end items-center gap-[30px] max-[1080px]:hidden">
         {navPages.map((item, ind) => {

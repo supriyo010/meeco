@@ -21,17 +21,22 @@ function Footer() {
   ];
   const contactPages = [
     {
-      title: "1234 Sample Street Austin Texas 78704",
+      title: "Gouri Bhawan, Gopinathpur Sagarbhanga, Durgapur-19      ",
       icon: <MdLocationPin className="text-[#fff]" size={24} />,
       to: "/",
     },
     {
-      title: "512 333 2222",
+      title: " Sanjib Sarani, Beside Maharaja Weighbridge, Durgapur-01     ",
+      icon: <MdLocationPin className="text-[#fff]" size={24} />,
+      to: "/",
+    },
+    {
+      title: "9679117507, 9333795331, 9800004250",
       icon: <MdLocalPhone className="text-[#fff]" size={20} />,
       to: "/",
     },
     {
-      title: "sampleemail@gmail.com",
+      title: "techmeeco.infrapl@gmail.com",
       icon: <MdMail className="text-[#fff]" size={20} />,
       to: "/",
     },
