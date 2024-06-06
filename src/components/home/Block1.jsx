@@ -48,7 +48,7 @@ function Block1({ scrollToTop }) {
             >
               <LuMoveRight className="text-[#333333] group-hover:translate-x-1 an" />
             </button>
-            <div className="h-[1px] flex-grow bg-[#d4d4d4]"></div>
+            <div className="h-[1px] flex-grow bg-[#e0d9d9]"></div>
           </div>
           <div className="flex flex-row w-full gap-8 items-center">
             <div className="pagiD">

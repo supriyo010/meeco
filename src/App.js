@@ -11,6 +11,7 @@ import { useRef } from "react";
 import About from "./components/about";
 
 import Carousel from "./components/Carousel";
+import Service from "./components/Service";
 
 
 
@@ -46,6 +47,7 @@ function App() {
             }}
           />
                    <Route path="co" Component={Carousel} />
+                   <Route path="ser" Component={Service} />
           <Route path="/gallery" Component={Gallery} />
           <Route
             path="/projects"

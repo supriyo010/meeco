@@ -10,6 +10,7 @@ function Navbar({ scrollToBottom, scrollToTop }) {
   const navPages = [
 
     { title: "home", to: "/" },
+    { title: "Service", to: "/ser" },
     { title: "gallery", to: "/gallery" },
     { title: "projects", to: "/projects" },
     { title: "contact", to: "/contact" },

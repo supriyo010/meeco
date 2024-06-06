@@ -46,7 +46,7 @@
 }
 
 .hw {
-  color: #fff;
+  color: #a01919;
   font-family: Roboto;
   font-size: 40px;
   font-style: normal;
@@ -110,7 +110,7 @@
 }
 
 .hBig {
-  color: var(--Gray-6, #f2f2f2);
+  color: var(--Gray-6, #443c3c);
   font-family: Roboto;
   font-size: 200px;
   font-style: normal;
