@@ -6,6 +6,7 @@ import Block4 from "./home/Block4";
 import Block5 from "./home/Block5";
 import Carousel from "./Carousel";
 import Service from "./Service";
+import ChatBot from "react-chatbotify";
 
 
 function Home({ scrollToTop }) {
@@ -18,7 +19,9 @@ function Home({ scrollToTop }) {
       <Block3 />
 
       <Block4 scrollToTop={scrollToTop} />
+      <ChatBot/>
       <Block5 />
+
     </div>
   );
 }
