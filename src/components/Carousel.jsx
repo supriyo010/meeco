@@ -46,16 +46,22 @@ const Carousel = () => {
         <div className="full-width-carousel">
             <Slider {...settings}>
                 <div className="full-width-slide">
-                    <img src={img2} alt="Scenic view of nature" className="slide-image" />
-                    <div className="slide-text">Meeco</div>
+                    <div className="slide-content">
+                        <img src={img2} alt="Scenic view of nature" className="slide-image" />
+                        <div className="slide-text">Meeco</div>
+                    </div>
                 </div>
                 <div className="full-width-slide">
-                    <img src={img3} alt="City skyline at sunset" className="slide-image" />
-                    <div className="slide-text">Meeco</div>
+                    <div className="slide-content">
+                        <img src={img3} alt="City skyline at sunset" className="slide-image" />
+                        <div className="slide-text">Meeco</div>
+                    </div>
                 </div>
                 <div className="full-width-slide">
-                    <img src={img4} alt="Mountain landscape" className="slide-image" />
-                    <div className="slide-text">Meeco</div>
+                    <div className="slide-content">
+                        <img src={img4} alt="Mountain landscape" className="slide-image" />
+                        <div className="slide-text">Meeco</div>
+                    </div>
                 </div>
             </Slider>
         </div>

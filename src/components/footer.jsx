@@ -43,11 +43,11 @@ function Footer() {
   ];
   return (
     <div className="w-full h-max bg-[#333] flex flex-col">
-      <div className="px-[130px] w-full h-max flex flex-row justify-between max-[1080px]:px-[10px] max-[1080px]:justify-center">
+      <div className="px-[100px] w-full h-max flex flex-row justify-between max-[1080px]:px-[10px] max-[1080px]:justify-center">
         <img
           src={lg1}
           alt="Logo"
-          className="w-[200px] h-[100px] object-cover filter mix-blend-screen max-[1080px]:hidden"
+          className="w-[200px] h-[150px] object-cover filter mix-blend-screen max-[1080px]:hidden pt-10"
         />
         <div className="flex-grow h-max flex flex-row max-w-[60%] max-[1080px]:max-w-[100%] max-[700px]:flex-col max-[700px]:py-[20px]">
           <div className="h-max w-1/2 flex flex-col items-start py-[30px] px-[40px] gap-4 max-[700px]:hidden">
