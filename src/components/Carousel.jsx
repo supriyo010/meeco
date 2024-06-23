@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import img2 from './images/P2.jpg';
 import img3 from './images/P5.jpg';
-import img4 from './images/P4.jpg';
+import img4 from './images/good.mp4';
 
 const Carousel = () => {
     const settings = {
@@ -48,19 +48,25 @@ const Carousel = () => {
                 <div className="full-width-slide">
                     <div className="slide-content">
                         <img src={img2} alt="Scenic view of nature" className="slide-image" />
-                        <div className="slide-text">Meeco</div>
+                        <div className="slide-text"><h1>
+                        <span>TECH MEECO</span><span> INFRA PVT. LTD.</span>
+    </h1></div>
                     </div>
                 </div>
                 <div className="full-width-slide">
                     <div className="slide-content">
                         <img src={img3} alt="City skyline at sunset" className="slide-image" />
-                        <div className="slide-text">Meeco</div>
+                        <div className="slide-text"><h1>
+                        <span>TECH MEECO</span><span> INFRA PVT. LTD.</span>
+    </h1></div>
                     </div>
                 </div>
                 <div className="full-width-slide">
                     <div className="slide-content">
-                        <img src={img4} alt="Mountain landscape" className="slide-image" />
-                        <div className="slide-text">Meeco</div>
+                        <video src={img4} alt="Mountain landscape" className="slide-image" />
+                        <div className="slide-text"> <h1>
+      <span>TECH MEECO</span><span> INFRA PVT. LTD.</span>
+    </h1></div>
                     </div>
                 </div>
             </Slider>

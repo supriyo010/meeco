@@ -8,7 +8,6 @@ function Navbar({ scrollToBottom, scrollToTop }) {
   const navigate = useNavigate();
 
   const navPages = [
-
     { title: "home", to: "/" },
     { title: "Service", to: "/ser" },
     { title: "gallery", to: "/gallery" },
@@ -19,14 +18,12 @@ function Navbar({ scrollToBottom, scrollToTop }) {
   const [drawer, setDrawer] = useState(false);
 
   return (
-    <div className="h-[100px] sticky top-0 left-0 w-full z-50 bg-[#ffffff] flex flex-row justify-between items-center px-[130px] max-[1080px]:px-[10px]">
- <img
-  src={lg1}
-  alt="Logo"
-  className="h-[150px] w-[180px] object-contain pt-4 pl-5 md:h-[200px] md:w-[220px] md:pl-1 md:pt-6"
-/>
-
-
+    <div className="h-[100px] sticky top-0 left-0 w-full z-50 bg-gradient-to-r from-blue-200 via-lightblue-200 to-violet-300 flex flex-row justify-between items-center px-[130px] max-[1080px]:px-[10px]">
+      <img
+        src={lg1}
+        alt="Logo"
+        className="h-[150px] w-[180px] object-contain pt-4 pl-5 md:h-[200px] md:w-[220px] md:pl-1 md:pt-6"
+      />
 
       <div className="flex flex-row justify-end items-center gap-[30px] max-[1080px]:hidden">
         {navPages.map((item, ind) => {
@@ -53,12 +50,14 @@ function Navbar({ scrollToBottom, scrollToTop }) {
           );
         })}
       </div>
+
       <MdMenu
         onClick={() => {
           setDrawer((cur) => !cur);
         }}
         className="text-[30px] mx-[10px] min-[1080px]:hidden"
       />
+
       <div
         className={`h-screen w-screen absolute top-0 left-0 bg-[#00000051] backdrop-filter backdrop-blur-sm ${
           drawer ? "" : "translate-y-[-100%]"
@@ -69,7 +68,7 @@ function Navbar({ scrollToBottom, scrollToTop }) {
             onClick={() => {
               setDrawer((cur) => !cur);
             }}
-            className="text-[30px] mx-[10px] min-[1080px]:hidden] text-[white]"
+            className="text-[30px] mx-[10px] min-[1080px]:hidden text-[white]"
           />
         </div>
         {navPages.map((item, ind) => {
