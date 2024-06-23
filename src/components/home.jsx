@@ -20,10 +20,10 @@ const steps = [
 function Home({ scrollToTop }) {
   return (
     <div
-      className="px-[130px] w-full h-max max-[1080px]:px-[20px]"
+      className="px-2 w-full h-max max-[1080px] md:px-[20px]" // Adjusted padding here
       style={{
         background: 'linear-gradient(135deg, #5D3FD3, #B19CD9, #ADD8E6, black)',
-        minHeight: '100vh' // Ensure the background covers the full viewport height
+        minHeight: '90vh' // Ensure the background covers the full viewport height
       }}
     >
       <Carousel scrollToTop={scrollToTop} />
@@ -35,7 +35,6 @@ function Home({ scrollToTop }) {
         <ChatBot steps={steps} />
       </div>
       <Block5 />
-
     </div>
   );
 }

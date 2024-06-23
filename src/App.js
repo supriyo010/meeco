@@ -17,7 +17,6 @@ import Service from "./components/Service";
 
 
 
-
 function App() {
   const contentRef = useRef();
 
@@ -26,43 +25,42 @@ function App() {
       contentRef.current.scrollTop = contentRef.current.scrollHeight;
     }
   };
+
   const scrollToTop = () => {
     if (contentRef.current) {
       contentRef.current.scrollTop = 0;
     }
   };
+
   return (
     <Router>
       <div
         ref={contentRef}
-        className="w-screen h-screen overflow-y-auto select-none overflow-x-clip"
+        className="w-screen h-screen overflow-y-auto select-none overflow-x-clip p-0 m-0"
+        style={{ margin: 0, padding: 0 }}
       >
         <Navbar scrollToBottom={scrollToBottom} scrollToTop={scrollToTop} />
         <Routes>
-       
           <Route
             path="/"
-            Component={() => {
-              return <Home scrollToTop={scrollToTop} />;
-            }}
+            element={<Home scrollToTop={scrollToTop} />}
           />
-                   <Route path="co" Component={Carousel} />
-                   <Route path="ser" Component={Service} />
-          <Route path="/gallery" Component={Gallery} />
+          <Route path="/co" element={<Carousel />} />
+          <Route path="/ser" element={<Service />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route
             path="/projects"
-            Component={() => {
-              return <Projects scrollToTop={scrollToTop} />;
-            }}
+            element={<Projects scrollToTop={scrollToTop} />}
           />
-          <Route path="/project/:id" Component={Project} />
-          <Route path="/certifications" Component={Certifications} />
-          <Route path="/about" Component={About} />
+          <Route path="/project/:id" element={<Project />} />
+          <Route path="/certifications" element={<Certifications />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </div>
     </Router>
   );
 }
+
 
 export default App;
