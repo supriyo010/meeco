@@ -5,6 +5,7 @@ import Block3 from "./home/Block3";
 import Block4 from "./home/Block4";
 import Block5 from "./home/Block5";
 import Carousel from "./Carousel";
+
 import Service from "./Service"; // Note: The `Service` component is imported but not used. You may remove this line if it's unnecessary.
 import ChatBot from "react-chatbotify";
 
@@ -21,7 +22,7 @@ function Home({ scrollToTop }) {
     <div
       className="px-[130px] w-full h-max max-[1080px]:px-[20px]"
       style={{
-        background: 'linear-gradient(135deg, blue, purple, black)',
+        background: 'linear-gradient(135deg, #5D3FD3, #B19CD9, #ADD8E6, black)',
         minHeight: '100vh' // Ensure the background covers the full viewport height
       }}
     >
@@ -34,6 +35,7 @@ function Home({ scrollToTop }) {
         <ChatBot steps={steps} />
       </div>
       <Block5 />
+
     </div>
   );
 }
