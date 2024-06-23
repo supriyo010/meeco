@@ -8,11 +8,11 @@ const Services = () => {
 
       <div className="mb-8 bg-white bg-opacity-80 p-4 rounded">
         <h2 className="text-xl md:text-2xl font-semibold text-violet-600">Pre-Engineered Buildings (PEB) - Design and Engineering</h2>
-        <div className="flex flex-col md:flex-row items-center my-4">
-          <img src="https://images.unsplash.com/photo-1474674556023-efef886fa147?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RlZWwlMjBmYWN0b3J5fGVufDB8fDB8fHww" alt="Design and Engineering" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0" />
-          <p>At Tech Meeco Infra Pvt. Ltd., we pride ourselves on our comprehensive design and engineering services for pre-engineered buildings (PEB). Our approach integrates cutting-edge technology and engineering expertise to develop innovative solutions tailored to meet the unique requirements of each project.</p>
+        <div className="flex flex-col md:flex-row items-center my-4 ">
+          <img src="https://images.unsplash.com/photo-1474674556023-efef886fa147?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RlZWwlMjBmYWN0b3J5fGVufDB8fDB8fHww" alt="Design and Engineering" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0 rounded-3xl" />
+          <p className='font-bold'>At Tech Meeco Infra Pvt. Ltd., we pride ourselves on our comprehensive design and engineering services for pre-engineered buildings (PEB). Our approach integrates cutting-edge technology and engineering expertise to develop innovative solutions tailored to meet the unique requirements of each project.</p>
         </div>
-        <h3 className="font-semibold">Key Features:</h3>
+        <h3 className="font-semibold text-3xl">Key Features:</h3>
         <ul className="list-disc list-inside">
           <li>Customized Designs: We offer customized PEB designs that cater to the specific needs of industrial, commercial, and institutional applications.</li>
           <li>Advanced Technology: Utilizing state-of-the-art software and engineering tools, we ensure precision and efficiency in our design processes.</li>
@@ -23,7 +23,7 @@ const Services = () => {
       <div className="mb-8 bg-white bg-opacity-80 p-4 rounded">
         <h2 className="text-xl md:text-2xl font-semibold text-violet-600">Pre-Engineered Buildings (PEB) - Fabrication</h2>
         <div className="flex flex-col md:flex-row items-center my-4">
-          <img src="https://media.istockphoto.com/id/912174592/photo/modern-pipe-rolling-plant-with-steel-tubes.webp?b=1&s=170667a&w=0&k=20&c=fSCCjrla7SM9EJmb14SRUUNBMBfPY9aX2fRVc-4Wtf4=" alt="Fabrication" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0" />
+          <img src="https://media.istockphoto.com/id/912174592/photo/modern-pipe-rolling-plant-with-steel-tubes.webp?b=1&s=170667a&w=0&k=20&c=fSCCjrla7SM9EJmb14SRUUNBMBfPY9aX2fRVc-4Wtf4=" alt="Fabrication" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0 rounded-3xl" />
           <p>Our fabrication services are at the heart of our pre-engineered building solutions. We leverage advanced machinery and high-tensile steel materials to produce durable and reliable structures.</p>
         </div>
         <h3 className="font-semibold">Fabrication Capabilities:</h3>
@@ -37,7 +37,7 @@ const Services = () => {
       <div className="mb-8 bg-white bg-opacity-80 p-4 rounded">
         <h2 className="text-xl md:text-2xl font-semibold text-violet-600">Pre-Engineered Buildings (PEB) - Installation</h2>
         <div className="flex flex-col md:flex-row items-center my-4">
-          <img src="https://static.vecteezy.com/system/resources/thumbnails/037/998/342/small_2x/ai-generated-abandoned-industrial-plant-in-the-middle-of-the-forest-with-blue-sky-photo.jpg" alt="Installation" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0" />
+          <img src="" alt="Installation" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0" />
           <p>Tech Meeco Infra Pvt. Ltd. offers efficient and safe installation services for pre-engineered buildings. Our approach minimizes construction time and cost while ensuring structural integrity.</p>
         </div>
         <h3 className="font-semibold">Installation Process:</h3>
