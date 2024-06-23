@@ -7,7 +7,7 @@
 
 .full-width-slide {
     width: 100%;
-    height: 90%;
+    height: 85%;
     position: relative;
 }
 
@@ -81,3 +81,20 @@ h1 {
     color: #4909dd;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
   }
+  @media (max-width: 1024px) {
+    .slide-text h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide-text h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide-text h1 {
+        font-size: 1.5em;
+    }
+}
