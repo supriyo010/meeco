@@ -1,4 +1,3 @@
-// Carousel.jsx
 import React, { useEffect, useRef } from 'react';
 import img4 from './images/good.mp4';
 import img5 from './images/video21.mp4'; // Add more video imports as needed

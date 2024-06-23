@@ -98,3 +98,32 @@ h1 {
         font-size: 1.5em;
     }
 }
+@media (max-width: 1024px) {
+    .full-width-carousel, .full-width-slide {
+        height: 80vh; /* Adjust height for tablets */
+    }
+
+    .slide-text h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .full-width-carousel, .full-width-slide {
+        height: 70vh; /* Adjust height for small tablets and large phones */
+    }
+
+    .slide-text h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .full-width-carousel, .full-width-slide {
+        height: 60vh; /* Adjust height for phones */
+    }
+
+    .slide-text h1 {
+        font-size: 1.5em;
+    }
+}
