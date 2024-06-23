@@ -1,14 +1,15 @@
 import React from 'react';
 
+
 const Services = () => {
   return (
-    <div className="container mx-auto px-4 py-6 bg-cover bg-center " style={{ backgroundImage: 'url("https://media.istockphoto.com/id/1390249924/photo/industrial-plant-for-the-production-of-sheet-metal-in-a-steel-mill-storage-of-sheet-rolls.webp?b=1&s=170667a&w=0&k=20&c=jd6wBN3IFe4rjABrWedeONgTUjEJrXUB2MRSPUBqQpQ=")' }}>
-      <h1 className="text-2xl font-bold mb-6 text-blue-600">Tech Meeco Infra Pvt. Ltd. - Our Services</h1>
-      
+    <div className="container mx-auto px-4 py-6 bg-cover bg-center" style={{ backgroundImage: 'url("https://media.istockphoto.com/id/1390249924/photo/industrial-plant-for-the-production-of-sheet-metal-in-a-steel-mill-storage-of-sheet-rolls.webp?b=1&s=170667a&w=0&k=20&c=jd6wBN3IFe4rjABrWedeONgTUjEJrXUB2MRSPUBqQpQ=")' }}>
+      <h1 className="text-2xl md:text-4xl font-bold mb-6 text-blue-600 text-center md:text-left">Tech Meeco Infra Pvt. Ltd. - Our Services</h1>
+
       <div className="mb-8 bg-white bg-opacity-80 p-4 rounded">
-        <h2 className="text-xl font-semibold text-violet-600">Pre-Engineered Buildings (PEB) - Design and Engineering</h2>
-        <div className="flex items-center my-4">
-          <img src="https://png.pngtree.com/thumb_back/fh260/background/20221114/pngtree-machine-shop-of-metallurgical-works-steel-industrial-production-photo-image_15277492.jpg" alt="Design and Engineering" className="mr-4" />
+        <h2 className="text-xl md:text-2xl font-semibold text-violet-600">Pre-Engineered Buildings (PEB) - Design and Engineering</h2>
+        <div className="flex flex-col md:flex-row items-center my-4">
+          <img src="https://images.unsplash.com/photo-1474674556023-efef886fa147?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RlZWwlMjBmYWN0b3J5fGVufDB8fDB8fHww" alt="Design and Engineering" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0" />
           <p>At Tech Meeco Infra Pvt. Ltd., we pride ourselves on our comprehensive design and engineering services for pre-engineered buildings (PEB). Our approach integrates cutting-edge technology and engineering expertise to develop innovative solutions tailored to meet the unique requirements of each project.</p>
         </div>
         <h3 className="font-semibold">Key Features:</h3>
@@ -18,11 +19,11 @@ const Services = () => {
           <li>Experienced Engineers: Our team of skilled engineers brings extensive experience and expertise to every project, ensuring the highest standards of quality and safety.</li>
         </ul>
       </div>
-      
+
       <div className="mb-8 bg-white bg-opacity-80 p-4 rounded">
-        <h2 className="text-xl font-semibold text-violet-600">Pre-Engineered Buildings (PEB) - Fabrication</h2>
-        <div className="flex items-center my-4">
-          <img src="https://media.istockphoto.com/id/912174592/photo/modern-pipe-rolling-plant-with-steel-tubes.webp?b=1&s=170667a&w=0&k=20&c=fSCCjrla7SM9EJmb14SRUUNBMBfPY9aX2fRVc-4Wtf4=" alt="Fabrication" className="mr-4" />
+        <h2 className="text-xl md:text-2xl font-semibold text-violet-600">Pre-Engineered Buildings (PEB) - Fabrication</h2>
+        <div className="flex flex-col md:flex-row items-center my-4">
+          <img src="https://media.istockphoto.com/id/912174592/photo/modern-pipe-rolling-plant-with-steel-tubes.webp?b=1&s=170667a&w=0&k=20&c=fSCCjrla7SM9EJmb14SRUUNBMBfPY9aX2fRVc-4Wtf4=" alt="Fabrication" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0" />
           <p>Our fabrication services are at the heart of our pre-engineered building solutions. We leverage advanced machinery and high-tensile steel materials to produce durable and reliable structures.</p>
         </div>
         <h3 className="font-semibold">Fabrication Capabilities:</h3>
@@ -32,11 +33,11 @@ const Services = () => {
           <li>Scalable Solutions: Our facilities are capable of handling large-scale projects, providing scalability to meet diverse client needs.</li>
         </ul>
       </div>
-      
+
       <div className="mb-8 bg-white bg-opacity-80 p-4 rounded">
-        <h2 className="text-xl font-semibold text-violet-600">Pre-Engineered Buildings (PEB) - Installation</h2>
-        <div className="flex items-center my-4">
-          <img src="https://static.vecteezy.com/system/resources/thumbnails/037/998/342/small_2x/ai-generated-abandoned-industrial-plant-in-the-middle-of-the-forest-with-blue-sky-photo.jpg" alt="Installation" className="mr-4" />
+        <h2 className="text-xl md:text-2xl font-semibold text-violet-600">Pre-Engineered Buildings (PEB) - Installation</h2>
+        <div className="flex flex-col md:flex-row items-center my-4">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/037/998/342/small_2x/ai-generated-abandoned-industrial-plant-in-the-middle-of-the-forest-with-blue-sky-photo.jpg" alt="Installation" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0" />
           <p>Tech Meeco Infra Pvt. Ltd. offers efficient and safe installation services for pre-engineered buildings. Our approach minimizes construction time and cost while ensuring structural integrity.</p>
         </div>
         <h3 className="font-semibold">Installation Process:</h3>
@@ -48,9 +49,9 @@ const Services = () => {
       </div>
 
       <div className="mb-8 bg-white bg-opacity-80 p-4 rounded">
-        <h2 className="text-xl font-semibold text-violet-600">Civil Construction</h2>
-        <div className="flex items-center my-4">
-          <img src="https://via.placeholder.com/150x100" alt="Civil Construction" className="mr-4" />
+        <h2 className="text-xl md:text-2xl font-semibold text-violet-600">Civil Construction</h2>
+        <div className="flex flex-col md:flex-row items-center my-4">
+          <img src="https://via.placeholder.com/150x100" alt="Civil Construction" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0" />
           <p>We excel in providing comprehensive civil construction services for a wide range of projects, from integrated steel plants to multifaceted building constructions.</p>
         </div>
         <h3 className="font-semibold">Services Offered:</h3>
@@ -62,9 +63,9 @@ const Services = () => {
       </div>
 
       <div className="mb-8 bg-white bg-opacity-80 p-4 rounded">
-        <h2 className="text-xl font-semibold text-violet-600">Structural Fabrication and Erection</h2>
-        <div className="flex items-center my-4">
-          <img src="https://via.placeholder.com/150x100" alt="Structural Fabrication and Erection" className="mr-4" />
+        <h2 className="text-xl md:text-2xl font-semibold text-violet-600">Structural Fabrication and Erection</h2>
+        <div className="flex flex-col md:flex-row items-center my-4">
+          <img src="https://via.placeholder.com/150x100" alt="Structural Fabrication and Erection" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0" />
           <p>Tech Meeco Infra Pvt. Ltd. offers end-to-end structural fabrication and erection services, ensuring that every project is executed with precision and excellence.</p>
         </div>
         <h3 className="font-semibold">Service Details:</h3>
@@ -76,9 +77,9 @@ const Services = () => {
       </div>
 
       <div className="mb-8 bg-white bg-opacity-80 p-4 rounded">
-        <h2 className="text-xl font-semibold text-violet-600">Mechanical Contracting</h2>
-        <div className="flex items-center my-4">
-          <img src="https://via.placeholder.com/150x100" alt="Mechanical Contracting" className="mr-4" />
+        <h2 className="text-xl md:text-2xl font-semibold text-violet-600">Mechanical Contracting</h2>
+        <div className="flex flex-col md:flex-row items-center my-4">
+          <img src="https://via.placeholder.com/150x100" alt="Mechanical Contracting" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0" />
           <p>Our mechanical contracting services encompass a wide range of capabilities, including material handling, equipment installation, and machining items.</p>
         </div>
         <h3 className="font-semibold">Capabilities:</h3>
@@ -90,9 +91,9 @@ const Services = () => {
       </div>
 
       <div className="mb-8 bg-white bg-opacity-80 p-4 rounded">
-        <h2 className="text-xl font-semibold text-violet-600">Material Handling</h2>
-        <div className="flex items-center my-4">
-          <img src="https://via.placeholder.com/150x100" alt="Material Handling" className="mr-4" />
+        <h2 className="text-xl md:text-2xl font-semibold text-violet-600">Material Handling</h2>
+        <div className="flex flex-col md:flex-row items-center my-4">
+          <img src="https://via.placeholder.com/150x100" alt="Material Handling" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0" />
           <p>Tech Meeco Infra Pvt. Ltd. delivers advanced material handling solutions designed to optimize efficiency and productivity within industrial facilities.</p>
         </div>
         <h3 className="font-semibold">Solutions Provided:</h3>
@@ -104,9 +105,9 @@ const Services = () => {
       </div>
 
       <div className="mb-8 bg-white bg-opacity-80 p-4 rounded">
-        <h2 className="text-xl font-semibold text-violet-600">Equipment Installation and Machining</h2>
-        <div className="flex items-center my-4">
-          <img src="https://via.placeholder.com/150x100" alt="Equipment Installation and Machining" className="mr-4" />
+        <h2 className="text-xl md:text-2xl font-semibold text-violet-600">Equipment Installation and Machining</h2>
+        <div className="flex flex-col md:flex-row items-center my-4">
+          <img src="https://via.placeholder.com/150x100" alt="Equipment Installation and Machining" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0" />
           <p>Our equipment installation and machining services ensure that all mechanical systems are installed and maintained to the highest standards.</p>
         </div>
         <h3 className="font-semibold">Service Highlights:</h3>
@@ -118,9 +119,9 @@ const Services = () => {
       </div>
 
       <div className="mb-8 bg-white bg-opacity-80 p-4 rounded">
-        <h2 className="text-xl font-semibold text-violet-600">Detailed Engineering and CAD Services</h2>
-        <div className="flex items-center my-4">
-          <img src="https://via.placeholder.com/150x100" alt="Detailed Engineering and CAD Services" className="mr-4" />
+        <h2 className="text-xl md:text-2xl font-semibold text-violet-600">Detailed Engineering and CAD Services</h2>
+        <div className="flex flex-col md:flex-row items-center my-4">
+          <img src="https://via.placeholder.com/150x100" alt="Detailed Engineering and CAD Services" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0" />
           <p>Tech Meeco Infra Pvt. Ltd. offers detailed engineering and CAD services to support the design and execution of complex projects.</p>
         </div>
         <h3 className="font-semibold">Engineering Services:</h3>
@@ -132,9 +133,9 @@ const Services = () => {
       </div>
 
       <div className="mb-8 bg-white bg-opacity-80 p-4 rounded">
-        <h2 className="text-xl font-semibold text-violet-600">Turnkey Construction Services</h2>
-        <div className="flex items-center my-4">
-          <img src="https://via.placeholder.com/150x100" alt="Turnkey Construction Services" className="mr-4" />
+        <h2 className="text-xl md:text-2xl font-semibold text-violet-600">Turnkey Construction Services</h2>
+        <div className="flex flex-col md:flex-row items-center my-4">
+          <img src="https://via.placeholder.com/150x100" alt="Turnkey Construction Services" className="w-full md:w-auto md:mr-4 mb-4 md:mb-0" />
           <p>Our turnkey construction services provide a comprehensive solution for clients seeking a single point of responsibility for their construction projects.</p>
         </div>
         <h3 className="font-semibold">Turnkey Approach:</h3>
@@ -149,3 +150,4 @@ const Services = () => {
 };
 
 export default Services;
+
