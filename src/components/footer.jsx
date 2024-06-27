@@ -12,10 +12,11 @@ function Footer() {
     { title: "gallery", to: "/gallery" },
     { title: "projects", to: "/projects" },
     { title: "certifications", to: "/certifications" },
+    { title: "contact", to: "/block" },
   ];
   const socialPages = [
     { title: "instagram", to: "/" },
-    { title: "lnked in", to: "/" },
+    { title: "lnkedin", to: "/" },
     { title: "facebook", to: "/" },
     { title: "twitter", to: "/" },
   ];

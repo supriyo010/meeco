@@ -1,31 +1,24 @@
 import React, { useEffect, useState } from "react";
 import exp from "./images/imageImport";
 import { LuMoveLeft, LuMoveRight } from "react-icons/lu";
-import { MdClose, MdOutlineClose } from "react-icons/md";
+import { MdClose } from "react-icons/md";
+import "./gallery.css"; // Make sure to import your CSS file
 
 function Gallery() {
-  const [imagesPerRow, setImagesperRow] = useState(1);
-  const [rows, setRows] = useState(5);
+  const [imagesPerRow, setImagesPerRow] = useState(4);
+  const [rows, setRows] = useState(4);
   const [page, setPage] = useState(1);
   const [active, setActive] = useState({});
-
-  // useEffect(() => {
-  //   if (window.innerWidth < 1080) {
-  //     setRows(5);
-  //     setImagesperRow(1);
-  //   } else {
-  //     setRows(2);
-  //     setImagesperRow(5);
-  //   }
-  // });
+  const [modalImage, setModalImage] = useState(null);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   function ori() {
-    if (window.innerWidth < 1080) {
-      setRows(5);
-      setImagesperRow(1);
+    if (window.innerWidth < 768) {
+      setRows(8);
+      setImagesPerRow(2);
     } else {
-      setRows(2);
-      setImagesperRow(5);
+      setRows(4);
+      setImagesPerRow(4);
     }
   }
 
@@ -47,66 +40,51 @@ function Gallery() {
     };
   }, []);
 
+  const openModal = (image) => {
+    setScrollPosition(window.scrollY);
+    setModalImage(image);
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeModal = () => {
+    setModalImage(null);
+    document.body.style.overflow = "auto";
+    window.scrollTo(0, scrollPosition);
+  };
+
   return (
-    <div className="px-[130px] w-full h-max flex flex-col items-start pb-[50px] max-[1080px]:px-[10px]">
+    <div className="gallery-container">
       <div className="flex flex-row justify-start gap-[20px] pb-[30px]">
         <div className="h1">Photo</div>
         <div className="h2">Gallery</div>
       </div>
 
-      <div className="w-full h-max pb-[30px] flex flex-wrap">
+      <div className="gallery">
         {Object.keys(exp.images).map((imageName, index) => {
           if (
             index >= rows * imagesPerRow * (page - 1) &&
             index < rows * imagesPerRow * page
           )
             return (
-              <div
-                className={`w-[${100 / imagesPerRow}%] h-[30vh] overflow-clip`}
-              >
-                <div
-                  className={`w-full h-full ${
-                    active[imageName]
-                      ? "absolute z-[60] w-full h-[calc(100vh-100px)] px-[100px] max-[1080px]:px-[10px] py-[50px] left-0 top-0 bg-[#fff] backdrop-filter backdrop-blur-sm max-[1080px]:h-screen"
-                      : ""
-                  }`}
-                >
-                  <div className="w-full h-full relative overflow-clip group">
-                    <div
-                      className={` ${
-                        active[imageName]
-                          ? "absolute h-max w-max right-0 top-0 m-3 border border-[#ffffff] bg-[#3333334f] backdrop-filter backdrop-blur-lg cursor-pointer translate-x-[calc(100%+12px)] group-hover:translate-x-0 an"
-                          : "hidden"
-                      }`}
-                      onClick={() => {
-                        setActive((cur) => ({ ...cur, [imageName]: false }));
-                      }}
-                    >
-                      <MdClose
-                        size={50}
-                        color="#fff"
-                        className="p-3 hover:rotate-90 an"
-                      />
-                    </div>
-                    <img
-                      key={index}
-                      src={exp.images[imageName]}
-                      alt={imageName}
-                      className={`w-full h-full object-cover ${
-                        active[imageName]
-                          ? ""
-                          : "scale-110 cursor-pointer hover:scale-90 an"
-                      }`}
-                      onClick={() => {
-                        setActive((cur) => ({ ...cur, [imageName]: true }));
-                      }}
-                    />
-                  </div>
-                </div>
+              <div className="gallery-item" key={index} onClick={() => openModal(exp.images[imageName])}>
+                <img
+                  src={exp.images[imageName]}
+                  alt={imageName}
+                  className="w-full h-full object-cover"
+                />
               </div>
             );
         })}
       </div>
+
+      {modalImage && (
+        <div className="modal" onClick={closeModal}>
+          <img src={modalImage} alt="Full view" />
+          <button className="modal-close" onClick={closeModal}>
+            &times;
+          </button>
+        </div>
+      )}
 
       <div className="w-full h-max flex flex-row justify-start items-center gap-[30px] ">
         <div className="flex flex-row w-max gap-8 items-center">

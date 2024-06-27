@@ -86,7 +86,7 @@ function Projects({ scrollToTop }) {
                       }}
                       className="bg-[white] w-max h-[70px] pl-[20px] pr-[50px] flex flex-row items-center gap-[18px] border border-[white] hover:border-[#d4d4d4] group an"
                     >
-                      <p className="b1">View More</p>
+                      <p className="b1 ">View More</p>
                       <LuMoveRight className="text-[#333333] group-hover:translate-x-2 an" />
                     </button>
                   </div>

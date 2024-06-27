@@ -12,6 +12,9 @@ import About from "./components/about";
 
 import Carousel from "./components/Carousel";
 import Service from "./components/Service";
+import Block5 from "./components/home/Block5";
+import cont from "./components/Cont";
+import Cont from "./components/Cont";
 
 
 
@@ -55,6 +58,9 @@ function App() {
           <Route path="/project/:id" element={<Project />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route path="/about" element={<About />} />
+          <Route path="/block" element={<Block5 />} />
+          <Route path="/cont" element={<Cont/>} />
+
         </Routes>
         <Footer />
       </div>

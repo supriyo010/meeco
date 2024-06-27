@@ -3,7 +3,7 @@ import lg1 from "./logo/logo-no-background.png";
 import { useLocation, useNavigate } from "react-router-dom";
 import { MdClose, MdMenu } from "react-icons/md";
 
-function Navbar({ scrollToBottom, scrollToTop }) {
+function Navbar({ scrollToBottom, scrollToTop }) {  
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -12,7 +12,7 @@ function Navbar({ scrollToBottom, scrollToTop }) {
     { title: "Service", to: "/ser" },
     { title: "gallery", to: "/gallery" },
     { title: "projects", to: "/projects" },
-    { title: "contact", to: "/contact" },
+    { title: "contact us", to: "/cont" },
   ];
 
   const [drawer, setDrawer] = useState(false);

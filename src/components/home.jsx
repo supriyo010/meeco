@@ -31,6 +31,13 @@ function Home({ scrollToTop }) {
       <Block2 scrollToTop={scrollToTop} />
       <Block3 />
       <Block4 scrollToTop={scrollToTop} />
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <div>
         <ChatBot steps={steps} />
       </div>
